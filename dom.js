@@ -21,9 +21,22 @@
 //     li[i].style.backgroundColor='grey';
 // }
 
+
+
+// solution for queryselector
+
 let secItem =document.querySelector('.list-group-item:nth-child(2)');
 secItem.style.backgroundColor='green';
 
 let thirdItem =document.querySelector('.list-group-item:nth-child(3)');
-thirdItem.style.display='none';
+// thirdItem.style.visibility="hidden";
 
+
+// solution for queryselectorAll
+
+let Item =document.querySelectorAll('.list-group-item');
+Item[1].style.color='green';
+for (let i=0;i<Item.length;i+=2){
+    Item[i].style.backgroundColor='green';
+
+}
